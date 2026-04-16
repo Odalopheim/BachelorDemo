@@ -45,6 +45,29 @@ a {
 	text-decoration: none;
 }
 
+.social-link {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 8px 12px;
+	border: 1px solid rgba(107, 228, 200, 0.35);
+	border-radius: 999px;
+	background: rgba(107, 228, 200, 0.08);
+	color: var(--text);
+	font-weight: 600;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 0.18em;
+	transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+	background: rgba(107, 228, 200, 0.16);
+	border-color: rgba(107, 228, 200, 0.7);
+	transform: translateY(-1px);
+	outline: none;
+}
+
 .page-shell {
 	width: min(1120px, calc(100% - 32px));
 	margin: 0 auto;
